@@ -1,0 +1,8 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "开启诚实守卫",
+    "hint": "她声称刷了抖音、发了评论、写了日记，但记录里没有时，会改成诚实的话。"
+  }
+}

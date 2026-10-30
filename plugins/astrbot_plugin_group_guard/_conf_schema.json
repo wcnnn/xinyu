@@ -1,0 +1,20 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用群聊护栏",
+    "hint": "开启后，群聊只做日常闲聊，不回答学术/作业/编程等需要深入思考的问题，也不调用工具；私聊不受影响。"
+  },
+  "allow_tools_in_group": {
+    "type": "bool",
+    "default": false,
+    "description": "允许在群里调用工具",
+    "hint": "关闭时（默认），群聊里要求模型不要调用任何工具。"
+  },
+  "group_rule": {
+    "type": "text",
+    "default": "",
+    "description": "自定义群聊规则",
+    "hint": "留空使用内置规则。填写后会整体替换内置规则文本。"
+  }
+}

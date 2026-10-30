@@ -1,0 +1,31 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用电脑操作"
+  },
+  "private_only": {
+    "type": "bool",
+    "default": true,
+    "description": "只在私聊生效",
+    "hint": "群聊里绝不允许动鼠标键盘。"
+  },
+  "max_actions_per_minute": {
+    "type": "int",
+    "default": 40,
+    "description": "每分钟最多操作次数",
+    "hint": "防止失控连点。"
+  },
+  "allow_shell": {
+    "type": "bool",
+    "default": true,
+    "description": "允许打开程序",
+    "hint": "开启后她可以启动你指定的程序（记事本、浏览器等）。"
+  },
+  "modify_requires_approval": {
+    "type": "bool",
+    "default": false,
+    "description": "需要授权才能动电脑",
+    "hint": "默认 false = 完全放开，她能直接操作。想收紧就改成 true。"
+  }
+}

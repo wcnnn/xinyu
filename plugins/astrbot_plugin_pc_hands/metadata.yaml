@@ -1,0 +1,6 @@
+name: astrbot_plugin_pc_hands
+display_name: 电脑手脚
+desc: 让糯糯能看见你的屏幕、移动鼠标、点击、打字、开程序，在你电脑里"玩"。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

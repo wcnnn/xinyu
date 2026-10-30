@@ -1,0 +1,6 @@
+name: astrbot_plugin_nuonuo_continuity
+display_name: 糯糯的连续性
+desc: 保证换会话/重启后还是同一个糯糯：记住上次聊到哪、断了多久，并在每轮注入时间感。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

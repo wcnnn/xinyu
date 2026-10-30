@@ -1,0 +1,19 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "开机后主动打招呼"
+  },
+  "owner_session": {
+    "type": "string",
+    "default": "大肥鱼:FriendMessage:主人的QQ号",
+    "description": "发给哪个会话",
+    "hint": "主人的私聊 unified_msg_origin。"
+  },
+  "delay_seconds": {
+    "type": "int",
+    "default": 45,
+    "description": "开机后等多久再发（秒）",
+    "hint": "太早发平台可能还没连上，建议 30～90。"
+  }
+}

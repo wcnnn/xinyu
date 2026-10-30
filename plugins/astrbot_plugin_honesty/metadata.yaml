@@ -1,0 +1,6 @@
+name: astrbot_plugin_honesty
+display_name: 诚实守卫
+desc: 她说自己做过什么，系统去查记录。查不到就把那句话改成诚实的。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

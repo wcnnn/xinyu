@@ -1,0 +1,13 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用连续性（时间感 + 断点衔接）"
+  },
+  "gap_threshold_hours": {
+    "type": "int",
+    "default": 1,
+    "description": "间隔超过多少小时才提醒她",
+    "hint": "太短会每句话都提'你多久没理我'，显得奇怪。"
+  }
+}

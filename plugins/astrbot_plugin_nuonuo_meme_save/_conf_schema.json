@@ -1,0 +1,14 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "允许她保存喜欢的表情包",
+    "hint": "只接受白名单域名，且会过滤不合适的描述。存下来后归到她自己的表情包，可以被 meme_manager 检索使用。"
+  },
+  "meme_packs_root": {
+    "type": "string",
+    "default": "",
+    "description": "meme_manager 的表情包目录",
+    "hint": "留空则自动定位到 plugin_data/meme_manager/packs。"
+  }
+}

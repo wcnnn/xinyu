@@ -1,0 +1,6 @@
+name: astrbot_plugin_nuonuo_boot_greeting
+display_name: 糯糯的开机问候
+desc: 电脑开机、AstrBot 启动后，她会主动发一条消息打招呼（按时间不同，问候也不一样）。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

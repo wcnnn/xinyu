@@ -1,0 +1,35 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用视频/音频接收"
+  },
+  "model_size": {
+    "type": "string",
+    "default": "small",
+    "hint": "tiny/small/medium。4GB 显存建议 small。",
+    "description": "语音识别模型大小"
+  },
+  "device": {
+    "type": "string",
+    "default": "cpu",
+    "hint": "这台机器缺 CUDA 运行库（cublas64_12.dll），先跑 cpu，装了 CUDA 再改成 cuda。",
+    "description": "推理设备"
+  },
+  "compute_type": {
+    "type": "string",
+    "default": "int8",
+    "hint": "显存紧张用 int8_float16，CPU 用 int8。",
+    "description": "计算精度"
+  },
+  "max_seconds": {
+    "type": "int",
+    "default": 300,
+    "description": "单个音视频最长处理多少秒"
+  },
+  "save_to_kb": {
+    "type": "bool",
+    "default": true,
+    "description": "把听到的内容写进学习笔记"
+  }
+}

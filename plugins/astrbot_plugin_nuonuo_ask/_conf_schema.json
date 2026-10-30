@@ -1,0 +1,8 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "动电脑前必须先问主人",
+    "hint": "关掉的话她会直接用电脑，不问。"
+  }
+}

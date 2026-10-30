@@ -1,0 +1,6 @@
+name: astrbot_plugin_nuonuo_selfcard
+display_name: 糯糯的自画像
+desc: 让她自己维护一段"我是谁"的描述，可以随时补充；但人格里的底线部分永远不受影响。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

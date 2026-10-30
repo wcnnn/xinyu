@@ -1,0 +1,14 @@
+{
+  "enabled_on_start": {
+    "type": "bool",
+    "default": false,
+    "description": "启动时就放开手（不用每次发「开手」）",
+    "hint": "关着更安全。开着的话她自己就能跑命令。"
+  },
+  "block_dangerous": {
+    "type": "bool",
+    "default": true,
+    "description": "拦截危险命令（格式化、关机、删系统等）",
+    "hint": "强烈建议开着。"
+  }
+}

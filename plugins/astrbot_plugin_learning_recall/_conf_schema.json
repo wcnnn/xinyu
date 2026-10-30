@@ -1,0 +1,18 @@
+{
+  "kb_names": {
+    "type": "string",
+    "default": "糯糯的学习笔记,糯糯的日记",
+    "description": "要检索的知识库",
+    "hint": "逗号分隔。默认查学习笔记和日记，两个都不参与每轮自动注入。"
+  },
+  "top_k": {
+    "type": "int",
+    "default": 4,
+    "description": "返回几条"
+  },
+  "max_chars": {
+    "type": "int",
+    "default": 1200,
+    "description": "返回内容的最大字符数"
+  }
+}

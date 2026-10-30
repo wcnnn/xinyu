@@ -1,0 +1,6 @@
+name: astrbot_plugin_nuonuo_hands_exec
+display_name: 糯糯的执行之手
+desc: 让她能自己执行 PowerShell 命令：查状态、跑脚本、看文件。默认关闭，主人发「开手」才放开，危险命令会被拦下。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

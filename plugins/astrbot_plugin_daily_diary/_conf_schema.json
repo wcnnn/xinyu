@@ -1,0 +1,67 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用每日日记"
+  },
+  "write_time": {
+    "type": "string",
+    "default": "23:30",
+    "description": "每天写日记的时间（HH:MM）",
+    "hint": "到点后如果今天还没写，就写一篇。补跑：程序启动时如果已过点且今天没写，也会补上。"
+  },
+  "send_to_owner": {
+    "type": "bool",
+    "default": true,
+    "description": "写完后发给我一份",
+    "hint": "关闭则只存文件/知识库，不主动发消息。"
+  },
+  "owner_session": {
+    "type": "string",
+    "default": "大肥鱼:FriendMessage:主人的QQ号",
+    "description": "发给哪个会话",
+    "hint": "主人的私聊 unified_msg_origin。"
+  },
+  "kb_name": {
+    "type": "string",
+    "default": "糯糯的日记",
+    "description": "写入哪个知识库",
+    "hint": "留空则只存本地文件。知识库不存在时会跳过入库，不影响写文件。"
+  },
+  "max_lines": {
+    "type": "int",
+    "default": 120,
+    "description": "每天最多参考多少条聊天记录",
+    "hint": "只取私聊里的日常消息，防止把长篇技术讨论也带进去。"
+  },
+  "private_only": {
+    "type": "bool",
+    "default": true,
+    "description": "只记私聊里的话",
+    "hint": "关闭后群聊内容也会进入素材，但只用来提炼开心的事。"
+  },
+  "private_diary": {
+    "type": "bool",
+    "default": true,
+    "description": "额外写一份只给她自己的私密日记",
+    "hint": "私密版加密存放在 private/ 下，不进知识库、不发消息，只有她能通过工具读取。"
+  },
+  "archive_dir": {
+    "type": "string",
+    "default": "F:\\糯糯\\04-日记",
+    "description": "额外归档目录",
+    "hint": "公开版存到该目录根下，私密版存到「私密日记」子目录，密钥另备份到「私密日记-密钥」。多个目录用分号隔开，留空则不归档。"
+  },
+  "provider_id": {
+    "type": "string",
+    "default": "",
+    "description": "用哪个模型写日记",
+    "hint": "留空则自动选第一个可用对话模型。"
+  },
+  "keep_days": {
+    "type": "int",
+    "default": 7,
+    "description": "素材保留天数",
+    "hint": "聊天素材保留几天，方便日记没写成时补写。设 0 等于只留当天。"
+  }
+}

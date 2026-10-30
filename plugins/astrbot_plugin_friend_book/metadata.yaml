@@ -1,0 +1,6 @@
+name: astrbot_plugin_friend_book
+display_name: 朋友档案
+desc: 主人的朋友名册：QQ 号、称呼、关系；支持对话添加，每 7 天把过期备注摘要成一句。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

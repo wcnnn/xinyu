@@ -1,0 +1,8 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用自画像（她可以自己补充人设）",
+    "hint": "她写的东西会注入系统提示，但人格卡里的【底线】不受影响。"
+  }
+}

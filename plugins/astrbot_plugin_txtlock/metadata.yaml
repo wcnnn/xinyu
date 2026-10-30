@@ -1,0 +1,6 @@
+name: astrbot_plugin_txtlock
+display_name: 文本加密锁
+desc: 给指定文本文件加密码锁：加密后就地变成密文，只有密码能解开。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

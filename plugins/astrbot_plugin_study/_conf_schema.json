@@ -1,0 +1,23 @@
+{
+  "private_only": {
+    "type": "bool",
+    "default": true,
+    "description": "只在私聊生效",
+    "hint": "群聊里不解析链接、不查文献，避免刷屏和滥用。"
+  },
+  "learning_kb": {
+    "type": "string",
+    "default": "糯糯的学习笔记",
+    "description": "学到的东西写进哪个知识库"
+  },
+  "max_chars": {
+    "type": "int",
+    "default": 3000,
+    "description": "网页正文最多返回多少字"
+  },
+  "save_to_kb": {
+    "type": "bool",
+    "default": true,
+    "description": "把学到的内容写进知识库"
+  }
+}

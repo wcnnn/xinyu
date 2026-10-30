@@ -1,0 +1,6 @@
+name: astrbot_plugin_media
+display_name: 看视频听音乐
+desc: 接收对方发来的视频或音频文件，本地转写内容给她看；视频额外抽几帧画面。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

@@ -1,0 +1,6 @@
+name: astrbot_plugin_self_extend
+display_name: 自我扩展
+desc: 允许糯糯申请安装插件；必须爸爸用一次性口令批准后才会真正执行。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

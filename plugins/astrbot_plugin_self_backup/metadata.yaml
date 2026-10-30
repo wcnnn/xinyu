@@ -1,0 +1,6 @@
+name: astrbot_plugin_self_backup
+display_name: 自我改动备份
+desc: 每检测到一次对糯糯的改动（人格/配置）就自动快照；7 天内没回档就自动删除，回档一条命令搞定。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

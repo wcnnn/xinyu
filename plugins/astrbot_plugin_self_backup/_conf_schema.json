@@ -1,0 +1,25 @@
+{
+  "retention_days": {
+    "type": "int",
+    "default": 7,
+    "description": "备份保留天数",
+    "hint": "超过这个天数、且没有标记“保留”的备份会被自动删除。"
+  },
+  "check_interval_seconds": {
+    "type": "int",
+    "default": 300,
+    "description": "检测改动的间隔（秒）",
+    "hint": "每隔这么久看一次人格和配置有没有变，变了就备份一次。"
+  },
+  "persona_id": {
+    "type": "string",
+    "default": "糯糯",
+    "description": "要保护的人格",
+    "hint": "只备份这一个人格的人格文本。"
+  },
+  "backup_configs": {
+    "type": "bool",
+    "default": true,
+    "description": "同时备份主配置和插件配置"
+  }
+}

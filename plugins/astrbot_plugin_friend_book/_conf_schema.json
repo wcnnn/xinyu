@@ -1,0 +1,8 @@
+{
+  "allow_group": {
+    "type": "bool",
+    "default": false,
+    "description": "在群聊中启用朋友档案",
+    "hint": "关闭时（默认），名单注入、/朋友 命令和 remember_friend 工具都只在私聊生效，群里完全不参与。"
+  }
+}

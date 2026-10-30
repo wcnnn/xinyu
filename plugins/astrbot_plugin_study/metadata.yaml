@@ -1,0 +1,6 @@
+name: astrbot_plugin_study
+display_name: 自主学习
+desc: 给糯糯三样能力：解析抖音/视频链接学内容、检索学术文献、阅读网页原文。不常驻浏览器。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

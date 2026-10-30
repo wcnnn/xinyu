@@ -1,0 +1,6 @@
+name: astrbot_plugin_daily_diary
+display_name: 每日日记
+desc: 白天默默记下听到的日常，到点用她自己的语气写一篇小日记，只写喜欢和开心的事，存文件并可发给你。
+version: v1.0.0
+author: "素衣携清风 & DSH"
+astrbot_version: ">=4.28.0"

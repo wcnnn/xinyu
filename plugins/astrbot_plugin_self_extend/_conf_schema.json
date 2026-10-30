@@ -1,0 +1,19 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用自我扩展（申请装插件）",
+    "hint": "开启后糯糯可以申请安装插件，你发 /同意 才会真正执行。"
+  },
+  "max_pending_minutes": {
+    "type": "int",
+    "default": 120,
+    "description": "申请有效期（分钟）"
+  },
+  "mirrors": {
+    "type": "string",
+    "default": "https://gh-proxy.com/;https://ghfast.top/;https://github.moeyy.xyz/;https://ghproxy.net/;https://ghproxy.cc/;https://mirror.ghproxy.com/",
+    "description": "GitHub 加速镜像（按顺序尝试）",
+    "hint": "从非国内地址下载时会自动逐个尝试这些镜像。多个用分号隔开，末尾要带斜杠；留空则使用内置列表。gitee/gitlab 等国内可达站点不会走镜像。"
+  }
+}
