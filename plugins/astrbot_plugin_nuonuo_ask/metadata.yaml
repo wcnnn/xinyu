@@ -2,5 +2,6 @@ name: astrbot_plugin_nuonuo_ask
 display_name: 动电脑前先问一声
 desc: 她想动电脑得先申请，主人回「同意」或「不同意」。批准后有 10 分钟时限，过期自动收回。
 version: v1.0.0
-author: "素衣携清风 & DSH"
+author: local
+repo: ""
 astrbot_version: ">=4.28.0"

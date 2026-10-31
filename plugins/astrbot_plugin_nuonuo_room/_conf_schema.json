@@ -1,0 +1,12 @@
+{
+  "enabled": {
+    "description": "让她知道自己住在房间里",
+    "type": "bool",
+    "default": true
+  },
+  "data_dir": {
+    "description": "AstrBot 数据目录（留空自动推断）",
+    "type": "string",
+    "default": ""
+  }
+}

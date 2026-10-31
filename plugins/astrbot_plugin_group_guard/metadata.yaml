@@ -2,5 +2,6 @@ name: astrbot_plugin_group_guard
 display_name: 群聊护栏
 desc: 群聊里只允许日常闲聊：不答学术/作业/编程等费算力问题，不调用工具，不展开长文；私聊不受影响。
 version: v1.0.0
-author: "素衣携清风 & DSH"
+author: local
+repo: ""
 astrbot_version: ">=4.28.0"

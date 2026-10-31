@@ -2,5 +2,6 @@ name: astrbot_plugin_learning_recall
 display_name: 学习笔记检索
 desc: 让她在需要时主动翻自己的学习笔记和日记（不占每轮上下文）。
 version: v1.0.0
-author: "素衣携清风 & DSH"
+author: local
+repo: ""
 astrbot_version: ">=4.28.0"

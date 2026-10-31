@@ -1,0 +1,8 @@
+{
+  "name": "astrbot_plugin_nuonuo_room",
+  "author": "素衣携清风 & DSH",
+  "desc": "让糯糯知道自己住在小屋里、小屋里有什么；屋外就是屋旁的稻田",
+  "version": "1.0.0",
+  "repo": "",
+  "astrbot_version": ">=4.0.0"
+}

@@ -50,6 +50,14 @@ CLAIMS = [
 
     # 分享
     (r"(分享了|发给你了|分享给)", "share", "分享"),
+
+    # 操作电脑：说自己开了某个程序
+    (r"(点开|打开|启动|开了|起来了)(了|一下)?(啦|呀|呢)?$", "app", "打开程序"),
+    (r"(点开|打开|启动)(了)?.{0,8}(向日葵|qq|微信|浏览器|程序|软件|应用)",
+     "app", "打开程序"),
+    (r"(向日葵|浏览器|微信|qq).{0,6}(我|已经)?(点开|打开|启动|开着)(了|啦)",
+     "app", "打开程序"),
+    (r"我(刚才|刚刚|已经)?(点开|打开|启动)了", "app", "打开程序"),
 ]
 
 # 这些词说明是在说"打算"而不是"做过"
@@ -171,7 +179,35 @@ class HonestyGuard(Star):
             return (1 if ok else 0), ("今天写了日记" if ok else "今天还没写日记")
         if kind == "share":
             return 1, "分享记录不单独存"   # 分享不硬拦
+        if kind == "app":
+            # 真去查进程：说打开的程序现在到底在不在跑
+            running = self._running_apps()
+            return (len(running) if running else 0,
+                    ("现在开着：" + "、".join(running)) if running else "没查到开着的程序")
         return 0, ""
+
+    @staticmethod
+    def _running_apps() -> list[str]:
+        """现在实际在跑的相关程序。"""
+        import subprocess
+
+        WATCH = {
+            "向日葵": ("awesun", "sunlogin", "oray"),
+            "微信": ("wechat", "weixin"),
+            "qq": ("qq.exe",),
+            "浏览器": ("chrome", "msedge", "firefox"),
+        }
+        out = []
+        try:
+            txt = subprocess.run(["tasklist"], capture_output=True,
+                                 text=True, timeout=10,
+                                 creationflags=0x08000000).stdout.lower()
+        except Exception:
+            return out
+        for name, keys in WATCH.items():
+            if any(k in txt for k in keys):
+                out.append(name)
+        return out
 
     # ------------------------------------------------------------ 改话
 
@@ -184,6 +220,8 @@ class HonestyGuard(Star):
             return "还没发"
         if kind == "diary":
             return "还没写"
+        if kind == "app":
+            return "我还没打开呢，等下弄"
         return "还没做"
 
     # 被改成实话的时候，一晚上别反复说同一句

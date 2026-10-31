@@ -1,4 +1,3 @@
-import os as _os
 """看视频 / 听音乐：接收对方发来的音视频文件，本地转写内容。
 
 流程：
@@ -23,8 +22,8 @@ from astrbot.api import logger
 from astrbot.api.event import AstrMessageEvent, filter
 from astrbot.api.star import Context, Star, StarTools, register
 
-FFMPEG = (_os.environ.get("FFMPEG_PATH") or "ffmpeg")
-WHISPER_DIR = _os.environ.get("WHISPER_DIR") or r"C:\Users\Public\whisper-models"
+FFMPEG = (os.environ.get("FFMPEG_PATH") or "ffmpeg")
+WHISPER_DIR = os.environ.get("WHISPER_DIR") or r"C:\Users\Public\whisper-models"
 AUDIO_EXT = {".mp3", ".wav", ".m4a", ".aac", ".flac", ".ogg", ".amr", ".silk", ".opus"}
 VIDEO_EXT = {".mp4", ".mov", ".mkv", ".avi", ".webm", ".flv", ".m4v"}
 LOG_DIR = str(Path(__file__).resolve().parents[2] / "plugin_data" / "astrbot_plugin_media")

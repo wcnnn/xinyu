@@ -1,0 +1,6 @@
+name: astrbot_plugin_tool_trim
+display_name: 工具裁剪
+desc: 按场景给工具。她日常只用十几件，其余用到了才拿出来，省下一大截上下文。
+version: 1.0.0
+author: 素衣携清风 & DSH
+repo: https://github.com/wcnnn/xinyu

@@ -1,0 +1,17 @@
+{
+  "enabled": {
+    "description": "开启提醒功能",
+    "type": "bool",
+    "default": true
+  },
+  "check_seconds": {
+    "description": "多久检查一次有没有该提醒的事（秒），最小 15",
+    "type": "int",
+    "default": 30
+  },
+  "max_pending": {
+    "description": "同一个人最多能挂多少个待提醒",
+    "type": "int",
+    "default": 20
+  }
+}

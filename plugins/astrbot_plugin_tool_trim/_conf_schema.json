@@ -1,0 +1,20 @@
+{
+    "enabled": {
+        "description": "启用工具裁剪",
+        "hint": "开启后，每次请求只带上当前场景用得上的工具。关掉就恢复成全部工具。",
+        "type": "bool",
+        "default": true
+    },
+    "hold_seconds": {
+        "description": "场景保持时间（秒）",
+        "hint": "命中一个场景后，这组工具保持多久。默认 600 秒。设 0 表示只看当前这句。",
+        "type": "int",
+        "default": 600
+    },
+    "always": {
+        "description": "永远给的工具",
+        "hint": "填工具名，逗号分隔。这里写的工具不受场景影响，一直在。",
+        "type": "text",
+        "default": ""
+    }
+}

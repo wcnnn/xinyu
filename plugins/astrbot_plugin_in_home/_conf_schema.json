@@ -1,0 +1,50 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用小屋联动",
+    "hint": "关掉后她既感觉不到小屋，也不能动稻田。"
+  },
+  "inject_context": {
+    "type": "bool",
+    "default": true,
+    "description": "每轮把她的窗外（小屋状态）注入系统提示",
+    "hint": "一段话，约 60–120 字；嫌占上下文可以关掉，只保留工具和命令。"
+  },
+  "private_only": {
+    "type": "bool",
+    "default": true,
+    "description": "只在私聊里感觉到小屋",
+    "hint": "群聊里不注入，也不允许动稻田。"
+  },
+  "allow_actions": {
+    "type": "bool",
+    "default": true,
+    "description": "允许她动稻田（种田/收稻谷/煮饭/喂自己）",
+    "hint": "只有主人（owner_qq 或 AstrBot 管理员）发话，她才能调用工具；关掉后只能看。"
+  },
+  "owner_qq": {
+    "type": "string",
+    "default": "1306056796",
+    "description": "主人的 QQ 号",
+    "hint": "只有这个号能在 QQ 里让她动小屋；留空则用 AstrBot 管理员判断。"
+  },
+  "dsh_url": {
+    "type": "string",
+    "default": "",
+    "description": "DSH 小屋地址（可留空）",
+    "hint": "留空会自动读 ~/.dsh/dsh-in-home/endpoint.json 或 DSH_WEB_URL；DSH 换端口也不用改。"
+  },
+  "timeout_ms": {
+    "type": "int",
+    "default": 1500,
+    "description": "请求超时（毫秒）",
+    "hint": "300–5000；连不上时不要拖慢聊天。"
+  },
+  "cache_seconds": {
+    "type": "int",
+    "default": 30,
+    "description": "小屋状态缓存（秒）",
+    "hint": "每轮注入复用缓存；她自己动过稻田会立即失效重读。"
+  }
+}

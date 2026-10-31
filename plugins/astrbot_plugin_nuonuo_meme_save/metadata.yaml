@@ -2,5 +2,6 @@ name: astrbot_plugin_nuonuo_meme_save
 display_name: 糯糯的表情收藏
 desc: 她看到喜欢的表情包可以自己存下来；下载前过滤色情和不良内容，保存后能被 meme_manager 检索并使用。
 version: v1.0.0
-author: "素衣携清风 & DSH"
+author: local
+repo: ""
 astrbot_version: ">=4.28.0"

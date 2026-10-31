@@ -1,0 +1,7 @@
+name: astrbot_plugin_in_home
+display_name: 小屋（糯糯的）
+desc: 让她感觉到 DSH 里那间小屋：每轮知道稻田和仓里的情况，能自己种田、收稻谷、煮饭、喂自己；主人在 QQ 里也能用 /小屋 帮她动。
+version: v1.0.0
+author: local
+repo: ""
+astrbot_version: ">=4.28.0"

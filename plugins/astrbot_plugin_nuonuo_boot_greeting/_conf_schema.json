@@ -6,7 +6,7 @@
   },
   "owner_session": {
     "type": "string",
-    "default": "大肥鱼:FriendMessage:主人的QQ号",
+    "default": "大肥鱼:FriendMessage:1306056796",
     "description": "发给哪个会话",
     "hint": "主人的私聊 unified_msg_origin。"
   },

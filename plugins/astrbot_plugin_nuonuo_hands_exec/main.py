@@ -91,14 +91,23 @@ class HandsExecPlugin(Star):
     def _may_exec(self, event: AstrMessageEvent) -> bool:
         if not self.state.get("enabled"):
             return False
+        # 白名单：只有名单里的 QQ 能用这条命令通道。留空则退回「只看是不是私聊」。
+        allow = str(self.state.get("allow_qq") or "").strip()
+        try:
+            sender = str(event.get_sender_id() or "").strip()
+        except Exception:
+            return False                      # 拿不到身份就别放行
+        if allow:
+            names = [x.strip() for x in allow.replace("，", ",").split(",") if x.strip()]
+            return sender in names
         if self.state.get("owner_only", True):
             try:
                 mtype = event.get_message_type()
                 name = str(getattr(mtype, "value", mtype))
-                if "Friend" not in name:
-                    return False
             except Exception:
-                pass
+                return False                  # 判不出类型就别放行（原来这里是放行）
+            if "Friend" not in name:
+                return False
         return True
 
     # ---------------- 执行 ----------------
