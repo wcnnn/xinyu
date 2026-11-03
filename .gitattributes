@@ -1,0 +1,11 @@
+# 部署时不要对二进制做换行转换，也不要用文本合并 —— 会破坏 exe 的签名
+*.exe   binary
+*.zip   binary
+*.cer   binary
+*.webm  binary
+*.webp  binary
+*.png   binary
+*.ico   binary
+*.dll   binary
+*.pyd   binary
+*.pyz   binary
